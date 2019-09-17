@@ -4,7 +4,7 @@
 
 header {
   display: flex;  
-  height: 50px;
+  position: fixed;
   background-color: gray;
   top: 0;
   min-height: 75px;
@@ -12,10 +12,51 @@ header {
   padding: 0px 20px;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+
+ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li {
+  padding: 6px;
+  background-color: orange;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  margin-left: 5px;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  ul {
+    width: auto;
+  }
+  body {
+    margin-top: 20vw;
+  }
+}
+
+#contact {
+  margin-right: 5vw;
 }
 
 img {
-  flex-basis: 5%;
+  max-width: 50px;
 }
 
 body {
@@ -42,19 +83,19 @@ body {
 
 .container3{
   display: flex;
-  border: 5px orange solid;
+  border: 3px orange solid;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex-direction: row;
   flex-basis: 5%;
   padding: 5px;
 }
 
-#video {
-  margin-left: 35%;
-  margin-top: 25px;
-  min-width: 30%;
+.videoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box{
@@ -69,33 +110,15 @@ body {
 
 .btn {
   display: block;
-  margin-left: 46%;
-  margin-top: 25px;
+  margin: 15px 0 10px 46%;
   height: 40px;
   font-size: 1em;
-  background-color: orangered;
-  border: 0;
+  background-color: orange;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
   border-radius: 2px;
-}
-
-ul {
-  width: 35vw;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
-}
-
-ul a {
-  margin-left: 30px;
-}
-
-a {
-  text-decoration: none;
-}
-
-#contact {
-  margin-right: 5vw;
+  cursor: pointer;
 }
 
 footer {

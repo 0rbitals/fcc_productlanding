@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <meta charset="UTF-8">
   <title>Product Landing Page</title>
 </head>
@@ -11,13 +12,13 @@
   <nav id="nav-bar">
     <ul>
       <li>
-        <a href="#desc">Description</a>
+        <a class="nav-link" href="#desc">Description</a>
       </li>
       <li>
-        <a href="#video">Video</a>
+        <a class="nav-link" href="#video">Video</a>
       </li>
       <li>
-        <a href="#price">Buy</a>
+        <a class="nav-link" href="#price">Buy</a>
       </li>
     </ul>
   </nav>
@@ -27,16 +28,19 @@
     <h2>Buy a Game Controller Today!</h2>
     <form action="https://www.freecodecamp.com/email-submit" id="form">
       <input type="email" name="email" placeholder="Enter your email" id="email">
-      <input type="button" id="submit" value="Join Newsletter">
+      <input type="submit" id="submit" value="Join Newsletter">
     </form>
   </div>
-  <iframe
-          id="video"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+  <div class="videoDiv">
+    <iframe
+            id="video"
+            width="420"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/xmIhDCBEkGU?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+  </div>
   <div class="container3" id="desc">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Quae iusto atque vel vero laudantium? Provident earum dicta cupiditate sunt sequi, soluta voluptates itaque 
